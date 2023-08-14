@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+}
+
+#gameboard {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.square {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    width: 128px;
+    height: 128px;
+}
+
+#controls {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#controls>div {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#controls div:last-child {}
+
+
+#controls input,
+#controls button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #666;
+}
+
+#controls button {
+    margin-left: .8rem;
+}
